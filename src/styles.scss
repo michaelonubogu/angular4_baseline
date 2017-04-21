@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+$bootstrap-sass-asset-helper: true;
+@import '~bootstrap-sass/assets/stylesheets/_bootstrap';
+@import 'assets/material_lab/material-lab';
+@import 'assets/material_lab/themes/theme-a';
+
+/* remove grid lines on d3 charts */
+.tick line {
+  display: none;
+}
+// X-Axis
+//.nv-y .tick.zero line { stroke: #ffffff; opacity: 0 !important;}
+// Y-Axis
+//.nv-y .nv-axis g path.domain { stroke: #ffffff; opacity: 0 !important; }
+
+.nvd3 .nv-axis .zero line{
+    stroke:black;
+    stroke-opacity:1;
+}
